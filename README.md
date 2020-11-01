@@ -14,7 +14,9 @@ const whenTables = sqliteHandler(db, {
   person: {
     id: 'INTEGER NOT NULL PRIMARY KEY',
     name: 'TEXT NOT NULL DEFAULT "anonymous"',
-    age: 'NUMBER'
+    age: 'NUMBER',
+    // if we forgot something else we can change it later on
+    // age: 'NUMBER NOT NULL DEFAULT 0'
   },
   // fields can change during development
   company: {
