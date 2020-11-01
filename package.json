@@ -1,6 +1,6 @@
 {
   "name": "sqlite-tables-handler",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "A simple helper for SQLite tables development that makes fields re-definition a deadly simple operation.",
   "main": "./cjs/index.js",
   "scripts": {
@@ -9,7 +9,12 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test": "nyc node test/index.js"
   },
-  "keywords": ["sqlite", "table", "alter", "handler"],
+  "keywords": [
+    "sqlite",
+    "table",
+    "alter",
+    "handler"
+  ],
   "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
