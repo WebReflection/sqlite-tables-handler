@@ -1,6 +1,6 @@
 # SQLite Tables Handler
 
-[![Build Status](https://travis-ci.com/WebReflection/sqlite-tables-handler.svg?branch=master)](https://travis-ci.com/WebReflection/sqlite-tables-handler) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/sqlite-tables-handler/badge.svg?branch=master)](https://coveralls.io/github/WebReflection/sqlite-tables-handler?branch=master)
+[![Build Status](https://travis-ci.com/WebReflection/sqlite-tables-handler.svg?branch=main)](https://travis-ci.com/WebReflection/sqlite-tables-handler) [![Coverage Status](https://coveralls.io/repos/github/WebReflection/sqlite-tables-handler/badge.svg?branch=main)](https://coveralls.io/github/WebReflection/sqlite-tables-handler?branch=main)
 
 A simple helper for SQLite tables development that makes fields re-definition a deadly simple operation.
 
