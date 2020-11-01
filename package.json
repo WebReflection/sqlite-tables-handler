@@ -1,7 +1,7 @@
 {
   "name": "sqlite-tables-handler",
   "version": "0.0.0",
-  "description": "",
+  "description": "A simple helper for SQLite tables development that makes fields re-definition a deadly simple operation.",
   "main": "./cjs/index.js",
   "scripts": {
     "build": "npm run cjs && npm run test",
@@ -9,8 +9,8 @@
     "coveralls": "nyc report --reporter=text-lcov | coveralls",
     "test": "nyc node test/index.js"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["sqlite", "table", "alter", "handler"],
+  "author": "Andrea Giammarchi",
   "license": "ISC",
   "devDependencies": {
     "ascjs": "^4.0.1",
@@ -26,5 +26,13 @@
       "default": "./cjs/index.js"
     },
     "./package.json": "./package.json"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WebReflection/sqlite-tables-handler.git"
+  },
+  "bugs": {
+    "url": "https://github.com/WebReflection/sqlite-tables-handler/issues"
+  },
+  "homepage": "https://github.com/WebReflection/sqlite-tables-handler#readme"
 }
