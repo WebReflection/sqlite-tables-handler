@@ -20,6 +20,7 @@
   "devDependencies": {
     "ascjs": "^4.0.1",
     "coveralls": "^3.1.0",
+    "id-promise": "^0.3.0",
     "nyc": "^15.1.0",
     "sqlite3": "^5.0.0"
   },
