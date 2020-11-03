@@ -50,9 +50,9 @@ Please note *renaming fields* is not supported, as it'd be impossible to guess w
 
 ## About Clusters
 
-If multiple forks simulatenously try to migrate one or more tables from one schema to another, disasters might happen.
+If multiple forks simulatenously trying to migrate one or more tables from one schema to another, disasters might happen.
 
-To prevent such situation, in case you are using multiple forks, I suggest to use [id-promise](https://github.com/WebReflection/id-promise#readme).
+To prevent such situation, I suggest the usage of [id-promise](https://github.com/WebReflection/id-promise#readme).
 
 ```js
 import sqlite3 from 'sqlite3';
