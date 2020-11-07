@@ -40,17 +40,17 @@ With this super basic helper, that's not an issue anymore, as I can change types
 
 ## API
 
-  * `db`, an SQLite db instance or `null`, to resolve right away in production
+  * `db`, an *sqlite3.Database* instance
   * `object`, an object with tables as keys, and fields as their values
 
-Any more complex table/field operation can be performed a part, but behind the module a `PRAGMA` check is performed to be sure current fields are the same specified in the existent table, if any, and an automatic upgrade/migration is performed when that's not the case.
+Any more complex table/field operation can be performed a part, but behind the module, a `PRAGMA` check is performed to be sure current fields are the same specified in the existent table, if any, and an automatic upgrade/migration is performed when that's not the case.
 
 Please note *renaming fields* is not supported, as it'd be impossible to guess what's a new name value should be taken from, so for these operations, please alter manually the table and then update the literal object definition to use the same name.
 
 
 ## About Clusters
 
-If multiple forks simulatenously trying to migrate one or more tables from one schema to another, disasters might happen.
+If multiple forks try simulatenously to migrate one or more tables from one schema to another, disasters might happen.
 
 To prevent such situation, I suggest the usage of [id-promise](https://github.com/WebReflection/id-promise#readme).
 

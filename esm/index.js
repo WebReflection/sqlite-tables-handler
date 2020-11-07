@@ -54,15 +54,12 @@ const escape = s => s.replace(/'/g, "''");
 
 const join = a => a.join(', ');
 
-export default (db, tables) => db ?
-  new Promise((res, rej) => {
-    const queries = [];
-    for (const table of keys(tables))
-      queries.push(create(db, table, tables[table]));
-    Promise.all(queries).then(res, rej);
-  }) :
-  Promise.resolve()
-;
+export default (db, tables) => new Promise((res, rej) => {
+  const queries = [];
+  for (const table of keys(tables))
+    queries.push(create(db, table, tables[table]));
+  Promise.all(queries).then(res, rej);
+});
 
 function knownColumns(col) {
   return -1 < this.findIndex(({name}) => name === col.name);
